@@ -216,3 +216,10 @@ print(list_a is list_b)
 print(list_b is list_c)
 print(list_a is not list_c)
 print(list_a == list_c)
+
+# Built-in functions
+
+print(type(1))
+print(__builtins__.type('Hey guys!'))
+print(1+2)
+print(__builtins__.dir())
