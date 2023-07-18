@@ -81,7 +81,24 @@ print(1 == 1 and 2 != 2)
 print(1 == 1 or 2 != 2)
 print(not 1 == 1)
 
-
 # Assignment operators
+
+a = 5
+a = a + 8
+print(a)
+a += 9
+print(a)
+a -= 4
+print(a)
+a *= 2
+print(a)
+a /= 4
+print(a)
+a %= 4
+print(a)
+a **= 8
+print(a)
+a //= 256
+print(a)
 
 # Logical operators
