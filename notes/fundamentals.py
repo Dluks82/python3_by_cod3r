@@ -190,3 +190,29 @@ msg = 'User logged.' if logged_user else 'User needs to log in.'
 msg2 = 'User logged: ' + ('No!', 'Yes!')[logged_user]
 print(msg)
 print(msg2)
+
+# Membership operators
+
+print(2 in [1, 2, 3])
+print(2 not in [1, 2, 3])
+print('py' in 'Python')
+print('py' not in 'Python')
+
+# Identity operators
+
+x = 3
+y = x
+z = 3
+
+print(x is y)
+print(y is z)
+print(x is not z)
+
+list_a = [1, 2, 3]
+list_b = list_a
+list_c = [1, 2, 3]
+
+print(list_a is list_b)
+print(list_b is list_c)
+print(list_a is not list_c)
+print(list_a == list_c)
