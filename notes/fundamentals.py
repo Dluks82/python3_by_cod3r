@@ -223,3 +223,49 @@ print(type(1))
 print(__builtins__.type('Hey guys!'))
 print(1+2)
 print(__builtins__.dir())
+
+# Type conversion
+
+print(2 + 3)
+print('2' + '3')
+# print(2 + '3') TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+a = 10
+b = '5'
+
+print(type(a))
+print(type(b))
+
+print(a + int(b))
+
+print(str(a) + b)
+
+print(type(str(a)))
+
+print(2 + float('3.4'))
+
+# print(2 + int('3.4')) ValueError: invalid literal for int() with base 10: '3.4'
+
+print(2 + int(float('3.4')))
+print(2 + int('3'))
+
+# print(2 + int('3.4')) ValueError: invalid literal for int() with base 10: '3.4'
+
+print(2 + float('3'))
+
+# print(2 + float('3.4')) ValueError: could not convert string to float: '3.4'
+
+print(2 + float('3.4'))
+
+print(2 + int(True))
+print(2 + int(False))
+print(2 + float(True))
+print(2 + float(False))
+print(str(True))
+print(str(False))
+print(bool(''))
+print(bool(0))
+print(bool(-2))
+print(bool(None))
+print(bool(' '))
+print(bool('abc'))
