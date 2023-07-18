@@ -375,3 +375,119 @@ print('Text with' + '\n' + 'line break')
 print('Text with\nline break')
 
 print('Text with\n\tline break')
+
+# List
+
+print(dir(list))
+
+empty_list = []
+
+list_a = [1, 2, 3]
+
+print(list_a)
+print(type(list_a))
+print(len(list_a))
+print(list_a[0])
+print(list_a[1])
+print(list_a[2])
+
+# print(list_a[3]) IndexError: list index out of range
+
+print(list_a[-1])
+print(list_a[-2])
+print(list_a[-3])
+
+# print(list_a[-4]) IndexError: list index out of range
+
+list_a[0] = 'Now I am a string'
+print(list_a)
+
+list_a[0] = 1
+print(list_a)
+
+list_a.append(4)
+print(list_a)
+
+list_a.append([5, 6])
+print(list_a)
+
+list_a.remove(2)
+print(list_a)
+
+list_a.extend([7, 8, 9])
+print(list_a)
+
+list_a.insert(0, 0)
+print(list_a)
+
+list_a.pop()
+print(list_a)
+
+list_a.pop(0)
+print(list_a)
+
+list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list_a)
+
+del (list_a[1:3])
+print(list_a)
+
+del (list_a[0])
+print(list_a)
+
+list_a.reverse()
+print(list_a)
+
+print(list_a[::-1])
+
+print(list_a.index(5))
+
+print(list_a.index(9))
+
+# print(list_a.index(10)) ValueError: 10 is not in list
+
+print(list_a[2:5])
+
+print(list_a[2:])
+print(list_a[:5])
+print(list_a[:])
+
+print(list_a[::2])
+print(list_a[::-1])
+
+print(list_a)
+print(list_a * 2)
+
+print(2 in list_a)
+print(10 in list_a)
+print(10 not in list_a)
+
+list_a = ['Diogo', 'Luks', 'Nunes']
+print(list_a)
+
+print(list_a[0])
+print(list_a[1])
+print(list_a[2])
+
+print(list_a[-1])
+
+print(list_a[0][0])
+
+list_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(list_a)
+
+print(list_a[0])
+
+print(list_a[0][0])
+
+print(list_a[1][2])
+
+print(list_a[2][1])
+
+list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list_a)
+
+print(list_a[1:4])
+
+
+# Tuple
