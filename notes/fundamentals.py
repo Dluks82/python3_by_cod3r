@@ -28,4 +28,23 @@ print(a+b)
 a = 'Now I am a string'
 print(a)
 
-# print(a + b) TypeError: can only concatenate str (not "float") to str
+# print(a + b) # TypeError: can only concatenate str (not "float") to str
+
+# Comments
+
+# This is a comment
+print('After comment')
+
+'''
+This is a
+multi-line
+comment
+'''
+
+print('After multi-line comment')
+
+salary = 5000.50
+expenses = 2850.20
+print(salary - expenses)
+
+print('end')
