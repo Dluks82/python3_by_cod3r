@@ -181,3 +181,12 @@ a = -a
 print(a)
 a = +a
 print(a)
+
+# Ternary operator
+
+logged_user = True
+
+msg = 'User logged.' if logged_user else 'User needs to log in.'
+msg2 = 'User logged: ' + ('No!', 'Yes!')[logged_user]
+print(msg)
+print(msg2)
