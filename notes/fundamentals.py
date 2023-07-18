@@ -269,3 +269,28 @@ print(bool(-2))
 print(bool(None))
 print(bool(' '))
 print(bool('abc'))
+
+# Automatic type conversion
+
+print(10/2)
+print(type(10/2))
+print(10/3)
+print(type(10/3))
+print(10//3)
+print(type(10//3))
+print(10//3.3)
+print(type(10//3.3))
+print(10/2.5)
+print(type(10/2.5))
+print(2+True)
+print(type(2+True))
+print(2+False)
+print(type(2+False))
+print(2+0.5)
+print(type(2+0.5))
+print(2+0)
+print(type(2+0))
+# print(2+'3') # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+# print(type(2+'3')) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print(2*'3')
+print(type(2*'3'))
