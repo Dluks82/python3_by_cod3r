@@ -112,5 +112,36 @@ print(not 0)
 print(not 1)
 print(1 > 2 and 2 < 3)
 print(1 > 2 or 2 < 3)
+print(1 > 2 or 2 == 3 and 3 > 2)
+print(1 > 2 and 2 == 3 or 3 > 2)
+print(1 > 2 and (2 == 3 or 3 > 2))
+print(1 > 2 or 2 == 3 and 3 > 2)
+print(1 != 2 and 10 > 2 and 2 == 2)
+
+# Caution - Logical operators and bitwise operators
+True & True
+False | True
+True ^ False
+
+# 3 = 11
+# 2 = 10
+# 1 = 01
+# 0 = 00
+
+# 3 & 2 = 10
+# 2 | 1 = 11
+# 3 ^ 2 = 01
+
+# Example
+balance = 100
+salary = 5000
+expenses = 3000
+
+balance_positive = balance > 0
+expenses_controlled = salary - expenses >= 0.2 * salary
+
+print('Expenses controlled::', balance_positive and expenses_controlled)
+
+# Challenge -
 
 # Unary operators
