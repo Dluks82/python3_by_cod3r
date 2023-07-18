@@ -3,9 +3,10 @@ from math import pi
 
 
 def circle(radius):
-    print('Circ area:', pi * float(radius) ** 2)
+    return pi * float(radius) ** 2
 
 
 if __name__ == '__main__':
     radius = input('Enter the radius of your circle (m): ')
-    circle(radius)
+    area = circle(radius)
+    print(f'The area of your circle is {area} m^2.')
