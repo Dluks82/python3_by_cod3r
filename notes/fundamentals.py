@@ -1,5 +1,6 @@
 # First examples
 
+from string import Template
 from decimal import Decimal, getcontext
 
 print('First Program...')
@@ -546,3 +547,187 @@ print(tuple_a)
 print(tuple_b)
 
 # Dictionary
+
+print(dir(dict))
+
+dict_a = {}
+print(dict_a)
+print(type(dict_a))
+
+dict_a = dict()
+print(dict_a)
+print(type(dict_a))
+
+dict_a = {'key1': 'value1', 'key2': 'value2'}
+print(dict_a)
+print(type(dict_a))
+
+print(dict_a['key1'])
+print(dict_a['key2'])
+
+# print(dict_a['key3']) KeyError: 'key3'
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+print(type(dict_a))
+
+dict_a['key4'] = 'value4'
+print(dict_a)
+
+dict_a['key4'] = 'value5'
+print(dict_a)
+
+del dict_a['key4']
+print(dict_a)
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+
+print('key1' in dict_a)
+print('key4' in dict_a)
+print('key4' not in dict_a)
+
+print('value1' in dict_a)
+print('value4' in dict_a)
+print('value4' not in dict_a)
+
+print(len(dict_a))
+
+print(dict_a.keys())
+print(dict_a.values())
+print(dict_a.items())
+
+print(dict_a.get('key1'))
+print(dict_a.get('key4'))
+print(dict_a.get('key4', 'Not found!'))
+
+print(dict_a)
+
+print(dict_a.pop('key1'))
+print(dict_a)
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+
+print(dict_a.popitem())
+print(dict_a)
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+
+dict_a.update({'key4': 'value4'})
+print(dict_a)
+
+dict_a.update({'key1': 'value5'})
+print(dict_a)
+
+dict_a.update({'key1': 'value5', 'key5': 'value5'})
+print(dict_a)
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+
+dict_a.clear()
+print(dict_a)
+
+dict_a = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+print(dict_a)
+
+dict_b = dict_a
+print(dict_a)
+print(dict_b)
+
+dict_b['key1'] = 'value5'
+print(dict_a)
+print(dict_b)
+
+dict_b = dict_a.copy()
+print(dict_a)
+print(dict_b)
+
+dict_b['key1'] = 'value6'
+print(dict_a)
+print(dict_b)
+
+del dict_b['key1']
+print(dict_a)
+print(dict_b)
+
+
+# Set
+
+print(dir(set))
+
+set_a = set()
+print(set_a)
+print(type(set_a))
+
+set_a = {1, 2, 3}
+print(set_a)
+
+set_a = {1, 2, 3, 3, 3, 3, 3, 3, 3}
+print(set_a)
+
+set_a.add(4)
+print(set_a)
+
+set_a.remove(4)
+print(set_a)
+
+set_a.discard(3)
+print(set_a)
+
+# set_a.remove(3) KeyError: 3
+
+set_a = {1, 2, 3}
+print(set_a)
+
+set_a.update({4, 5, 6})
+print(set_a)
+
+set_a.pop()
+print(set_a)
+
+c1 = {1, 2}
+c2 = {2, 3}
+print(c1.union(c2))
+print(c1.intersection(c2))
+print(c1)
+
+c1.update(c2)
+print(c1)
+
+c1 -= {2}
+print(c1)
+
+c1 = {1, 2}
+c2 = {2, 3}
+print(c1)
+print(c2)
+
+print(c1 - c2)
+print(c2 - c1)
+
+c1 -= {2}
+print(c1)
+
+
+# Interpolation
+
+name, age = 'Diogo', 41
+# s = string, d = decimal, f = float, r = raw, a = ascii, e = exponential, g = general, o = octal, x = hexadecimal
+print('Name: %s Age: %d' % (name, age))  # Old way
+print('Name: {0} Age: {1}'.format(name, age))  # Python 3
+print(f'Name: {name} Age: {age}')  # Python 3.6
+
+print(f'2 + 2 = {2 + 2}')
+
+print(f'Name: {name} Age: {age + 2}')
+
+print(f'Name: {name.lower()} Age: {age + 2}')
+
+
+# Template
+
+s = Template('Name: $name Age: $age')
+print(s.substitute(name=name, age=age))
