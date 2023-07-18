@@ -48,3 +48,40 @@ expenses = 2850.20
 print(salary - expenses)
 
 print('end')
+
+# Arithmetic operators
+
+print(5+3)
+print(5-2)
+print(2*3.15)
+print(8/4)
+print(8//3)
+print(8 % 3)
+print(2**8)
+
+
+# Challenge - Calculate percentual of expenses
+salary = 5000.0
+expenses = 3000.0
+
+percentual = (expenses / salary) * 100
+
+print(percentual, '%')
+
+# Relational operators
+
+print(1 > 2)
+print(1 >= 2)
+print(1 < 2)
+print(1 <= 2)
+print(1 == 2)
+print(1 != 2)
+print(1 == 1 and 2 == 2)
+print(1 == 1 and 2 != 2)
+print(1 == 1 or 2 != 2)
+print(not 1 == 1)
+
+
+# Assignment operators
+
+# Logical operators
