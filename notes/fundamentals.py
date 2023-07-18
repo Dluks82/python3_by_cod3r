@@ -143,5 +143,20 @@ expenses_controlled = salary - expenses >= 0.2 * salary
 print('Expenses controlled::', balance_positive and expenses_controlled)
 
 # Challenge -
+# 1. Work on the morning and afternoon
+# 2. The TV is on
+# 3. Buy an ice cream
+work_morning = False
+work_afternoon = False
+
+tv_50 = work_morning and work_afternoon
+tv_32 = work_morning != work_afternoon
+
+ice_cream = work_morning or work_afternoon
+healthy = not ice_cream
+
+print('TV 50: {} TV 32: {} Ice Cream: {} Healthy: {}'.format(
+    tv_50, tv_32, ice_cream, healthy))
+
 
 # Unary operators
