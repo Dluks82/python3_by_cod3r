@@ -17,3 +17,15 @@ print('You are ' + 3 * 'very ' + 'cool')
 print([1, 2, 3])
 print({'name': 'Diogo', 'age': 41})
 print(None)
+
+# Variables
+
+a = 20
+b = 4.5
+
+print(a+b)
+
+a = 'Now I am a string'
+print(a)
+
+# print(a + b) TypeError: can only concatenate str (not "float") to str
