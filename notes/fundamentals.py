@@ -330,3 +330,48 @@ print(Decimal(1) / Decimal(7))
 print(Decimal(1) / Decimal(7))
 
 print(Decimal.max(Decimal(1), Decimal(7)))
+
+print(dir(Decimal))
+
+# String
+print("String")
+print(dir(str))
+
+name = 'Diogo'
+print(name)
+print(name[0])
+print(name[4])
+# print(name[5]) IndexError: string index out of range
+print(name[-1])
+print(name[-5])
+# print(name[-6]) IndexError: string index out of range
+
+print(name[0:2])
+print(name[2:4])
+print(name[:4])
+print(name[2:])
+print(name[-2:])
+print(name[:-2])
+print(name[:])
+print(name[::2])
+print(name[::-1])
+print(name[::-2])
+
+# whater mark
+print("Luks \"Nunes\"" == 'Luks "Nunes"')
+print('Text with \n line break')
+print(r'Text with \n line break')
+
+print("""\
+Text with
+line break""")
+
+print("""\
+Text with
+    line break""")
+
+print('Text with' + '\n' + 'line break')
+
+print('Text with\nline break')
+
+print('Text with\n\tline break')
