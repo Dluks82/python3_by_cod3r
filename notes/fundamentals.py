@@ -491,3 +491,58 @@ print(list_a[1:4])
 
 
 # Tuple
+
+tuple_a = tuple()
+tuple_a = ()
+print(tuple_a)
+print(type(tuple_a))
+
+print(dir(tuple))
+
+tuple_a = ('One element')
+print(tuple_a)
+print(type(tuple_a))
+
+tuple_a = ('One element',)
+
+print(tuple_a)
+print(type(tuple_a))
+
+tuple_a = ('One', 'Two', 'Three')
+print(tuple_a)
+print(type(tuple_a))
+
+print(tuple_a[0])
+print(tuple_a[1])
+print(tuple_a[2])
+
+# tuple_a[0] = 1 TypeError: 'tuple' object does not support item assignment
+
+print(tuple_a[1:])
+print(tuple_a[:-1])
+print(tuple_a[:])
+
+print(tuple_a + tuple_a)
+print(tuple_a * 2)
+
+print(3 in tuple_a)
+print('Three' in tuple_a)
+print('Four' not in tuple_a)
+
+tuple_b = tuple_a
+print(tuple_a is tuple_b)
+print(tuple_a == tuple_b)
+
+tuple_b = tuple_a + tuple_a
+print(tuple_a is tuple_b)
+print(tuple_a == tuple_b)
+
+tuple_a, tuple_b = (1, 2, 3), (4, 5, 6)
+print(tuple_a)
+print(tuple_b)
+
+tuple_a, tuple_b = tuple_b, tuple_a
+print(tuple_a)
+print(tuple_b)
+
+# Dictionary
