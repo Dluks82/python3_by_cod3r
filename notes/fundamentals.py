@@ -102,3 +102,15 @@ a //= 256
 print(a)
 
 # Logical operators
+
+print(True or False)
+print(False or False)
+print(True and True)
+print(not True)
+print(not False)
+print(not 0)
+print(not 1)
+print(1 > 2 and 2 < 3)
+print(1 > 2 or 2 < 3)
+
+# Unary operators
