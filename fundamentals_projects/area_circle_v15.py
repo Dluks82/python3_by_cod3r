@@ -26,7 +26,7 @@ if __name__ == '__main__':
         sys.exit(errno.EPERM)
     elif not sys.argv[1].isnumeric():
         help()
-        print(TerminalColor.ERR + 'The radius must be a number.' +
+        print(TerminalColor.ERR + 'The radius must be a number(integer).' +
               TerminalColor.NORMAL)
         sys.exit(errno.EINVAL)
     else:
