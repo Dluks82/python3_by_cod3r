@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def print_recursively(max, current):
+    # stop condition
     if current >= max:
         return
     print(current)
