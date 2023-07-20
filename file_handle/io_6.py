@@ -10,3 +10,6 @@ with open('people.csv') as file:
 
 if file.closed:
     print('File is closed')
+
+if output.closed:
+    print('Output is closed')
