@@ -1,0 +1,6 @@
+Name: Diogo, Age: 41
+Name: Ana, Age: 15
+Name: Diana, Age: 12
+Name: Joao, Age: 14
+Name: Eli, Age: 67
+Name: Maria, Age: 40
