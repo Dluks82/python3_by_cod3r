@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+
+class RGB(object):
+    def __init__(self):
+        self.colors = ['red', 'green', 'blue'][::-1]
+
+    def __next__(self):
+        try:
+            return self.colors.pop()
+        except IndexError:
+            raise StopIteration()
+
+
+if __name__ == '__main__':
+    colors = RGB()
+    print(next(colors))
+    print(next(colors))
+    print(next(colors))
+
+    try:
+        print(next(colors))
+    except StopIteration:
+        print('- end of iteration!')
